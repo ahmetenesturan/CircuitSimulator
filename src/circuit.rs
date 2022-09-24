@@ -3,6 +3,7 @@ pub struct Resistor{
     branch:Branch
 }
 
+#[derive(Copy, Clone)]
 pub struct Branch{
     first_node:u16,
     second_node:u16
@@ -14,6 +15,7 @@ impl Branch {
         return b;
     }
 }
+
 
 impl Resistor{
     pub fn new(res:f64, b:Branch) -> Self{
